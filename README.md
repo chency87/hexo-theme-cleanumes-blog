@@ -12,6 +12,7 @@ cleanumes-blog is a full featured, responsive Hexo theme. [Demo here](http://www
 - Github comments
 - Resumes
 - Markdown Mermaid Support
+- Right-Sidebar
 - Cover image for posts and pages
 - Tags and Categories Support
 - Responsive Images
