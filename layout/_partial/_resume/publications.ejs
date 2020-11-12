@@ -1,0 +1,15 @@
+<h2 class="mb-5"><%- item.title %></h2>
+
+<% item.lists.forEach(element => { %>
+<div class="subheading mb-3"><%- element.year %> </div>
+<ul class="fa-ul mb-0">
+  <% for( let index = 0; index < element.lists.length; index++ ) { %>
+  <li class="pub-li">
+
+    <a href='<%- element.lists[index].href%>' target="_blank"><span
+        class="fa-li">[<%- index + 1 %>]</span><%- element.lists[index].reference%></a>
+
+  </li>
+  <% } %>
+</ul>
+<% }) %>

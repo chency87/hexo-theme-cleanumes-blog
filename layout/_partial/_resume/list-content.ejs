@@ -1,0 +1,9 @@
+<h2 class="mb-5"><%- item.title %></h2>
+<ul class="fa-ul mb-0">
+  <% item.lists.forEach(element => { %>
+  <li>
+    <span class="fa-li"><i class="fa <%- item.icon || 'fa-trophy' %> text-warning"></i></span>
+    <%- element %>
+  </li>
+  <% }) %>
+</ul>

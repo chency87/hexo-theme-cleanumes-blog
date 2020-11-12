@@ -1,0 +1,12 @@
+<!-- </header> -->
+<div id="tag-cloud-content">
+  <h5 class="tag-cloud-title"><%- "标签 | Tags " + site.tags.length %></h5>
+
+  <div class="tag-cloud">
+    <div class="tag-cloud-title"></div>
+    <div class="tag-cloud-tags">
+      <%- tagcloud(site.tags,{ min_font: 18, max_font: 40, amount: 200, color:
+      true, start_color: '#ff6666', end_color: '#0099cc' }) %>
+    </div>
+  </div>
+</div>

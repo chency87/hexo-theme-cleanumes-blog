@@ -1,0 +1,307 @@
+# Header
+menu:
+  Home: /
+  #  Archives: /archives
+  Tags: /tags
+  Categories: /categories
+  About:
+    url: /about
+    icon:
+  Contact:
+    /contact
+    #[url:"/about",icon: "user-tag"]
+  #{path:"/about",icon: "user-circle"}
+
+#  Github:
+#    url: https://github.com/chency87
+#    icon: github
+
+# Title on top left of menu. Leave empty to use main blog title
+menu_title: Let it be me
+
+# URL of the Home page image
+index_cover: /img/home-bg.jpg
+
+archive_cover: /img/contact-bg.jpg
+
+tags_cover: /img/tags-bg.jpg
+
+categories_cover: /img/categories-bg.jpg
+
+about_cover: /img/about-bg.jpg
+
+contact_cover: /img/about-bg.jpg
+# Default post title
+default_post_title: Untitled
+
+comment: true
+# Comments. Choose one by filling up the information
+#gitalk settings
+gitalk:
+  enable: true
+  owner: chency87
+  repo: blogcomments
+  admin: chency87
+  clientID: 5e1fb4b08f0c88d80e3c
+  clientSecret: 070ad9992a17decff2ae70e33b292f907817769a
+
+# Test
+
+# Google Analytics Tracking ID
+google_analytics:
+
+# Addthis ID
+addthis:
+  enable: false
+  pubid:
+  facebook: true
+  twitter: true
+  google: true
+  pinterest: true
+
+# set your own favicon
+favicon: /img/favicon.ico
+
+preview:
+  enable: true
+  model: wave
+
+# Social Accounts
+twitter_url:
+twitter_handle:
+facebook_url:
+github_url: https://github.com/chency87
+gitlab_url:
+linkedin_url:
+mailto: ccy_0807@sina.com
+weibo_url: https://weibo.com/chency0807
+zhihu_url: chency87
+
+# sidebar config
+sidebar_about_description: 'I am Chen Chunyu, a big fan of science and willing to become a Ph.D. <br>Before leaving the world, everything is a process'
+sidebar_about_img: /img/about-me2.jpg
+
+# search
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+local_search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+#### Custom Search
+google_cse:
+  enable: false
+  cx: ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
+## https://www.google.com/cse/
+## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
+## set the 'front-matter' as
+## layout: search
+## title: search
+## ---
+baidu_search: ## http://zn.baidu.com/
+  enable: true
+  id: ## e.g. "783281470518440642"  for your baidu search id
+  site: http://zhannei.baidu.com/cse/search ## your can change to your site instead of the default site
+
+mermaid:
+  enable: true
+  # Available themes: default | dark | forest | neutral
+  theme: forest
+  version: 7.1.2
+  cdn: //cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js
+
+resume_menu:
+  About: '#about'
+  Experience: '#experience'
+  Education: '#education'
+  Skills: '#skills'
+  Interests: '#interests'
+  Awards: '#awards'
+
+resume:
+  menu:
+    About:
+      id: 'aboutme'
+      section: 'aboutme'
+    Experience:
+      id: 'experience'
+      section: 'experience'
+    Education:
+      id: 'education'
+      section: 'education'
+    Publications:
+      id: 'publications'
+      section: 'publications'
+    skills:
+      id: 'skills'
+      section: 'skills'
+    awards:
+      id: 'awards'
+      section: list-content
+    # interests:
+    #   id: 'interests'
+    #   section: 'title-paragraph-content'
+  aboutme:
+    first_name: chunyu
+    last_name: chen
+    address: 'Shenyang China'
+    zip: '110014'
+    email: 'chenchunyu@sia.cn'
+    telephone: '(+86)18640301778'
+    bio: 'No idea, can only follow the footsteps of others;<br/> No ability, can only be fantasy;<br/>Looking forward to be able to turn the imagination into reality.'
+    social:
+      homepage:
+        href: '/'
+        icon: 'fa-home'
+      github:
+        href: 'https://github.com/chency87/'
+        icon: 'fa-github'
+      # weibo:
+      #   href: 'weibo'
+      #   icon: 'fa-weibo'
+      # zhihu:
+      #   href: 'zhihu'
+      #   icon: '知'
+      weixin:
+        href: '/img/CV_CHENCHUNYU.pdf'
+        icon: 'CV'
+
+  experience:
+    title: Experience
+    lists:
+      - exp1:
+        name: 'Shenyang Institute of Automation, Chinese Academy of Sciences'
+        responsibility: 'Assistant Researcher, Industrial Control Systems and Network Research Office'
+        content: 'Responsible for research on Edge computing Serurity,  IDS of Industrial Network, the preparation of application documents including project framework, solution, budgets, etc.<br/>Led the team to develop software module'
+        date: 'Jan. 2018 - Present'
+      - exp2:
+        name: 'IoT Platform developer'
+        responsibility:
+        content: 'State Grid Corporation of China Science and Technology Project</br>Developed different protocols(Modbus/DNP3) of industrial control site terminal data acquisition, terminal access, network traffic analysis, network access control and other functions. Add some crucial components(Auth/Network traffic monitor based Snort) to IoT Platform'
+        date:
+      - exp3:
+        name: 'Edge Computing Security White Paper'
+        responsibility: 'Chief Editor'
+        content: 'Analyze the potential risks and possible solutions for Edge Computing from the aspects of infrastructure, network, data, application, and cloud-side collaboration. <a href="http://www.ecconsortium.org/Lists/show/id/374.html">Link</a>'
+        date:
+      - exp4:
+        name: 'Security Analysis Engineer'
+        responsibility:
+        content: 'Analyzed the abnormal behavior via CNN & LSTM, these two algorithms are respectively used to extract the spatial and temporal characteristics, and the industrial network abnormal behavior monitoring is realized through full connection. <br/>The experiment is based on tensorflow and Keras. <a href="http://www.ecconsortium.org/Lists/show/id/374.html">Link</a>'
+        date:
+      - exp5:
+        name: 'Industrial Control System Vulnerability Analysis'
+        responsibility:
+        content: 'Responsible for writing the project part of the project declaration. Researched on industrial safety functional and information security integration technologies, and built into PLC equipment'
+        date:
+  education:
+    title: Education
+    lists:
+      - master:
+        school: 'Northeastern University(China)'
+        major: 'Master in Software Engineering'
+        content: 'Research orientation : Verifiable Computation(Supervisor: Prof. Fucai Zhou)<br>Qualified for matriculation exempt<br>'
+        date: '2015-2018'
+      - bachelor:
+        school: 'Northeastern University(China)'
+        major: 'Information Security'
+        content: ''
+        date: '2011-2015'
+  publications:
+    title: 'Publications'
+    lists:
+      - part1:
+        year: 2020
+        lists:
+          - item1:
+            reference: 'Q. Wang, F. Zhou, B. Zhou, J. Xu, <b>CY Chen</b>, et al, "Privacy-Preserving Publicly Verifiable Databases," in IEEE Transactions on Dependable and Secure Computing, doi: 10.1109/TDSC.2020.3032961.'
+            href: 'https://ieeexplore.ieee.org/document/9237106/'
+          - item2:
+            reference: 'Zhou BY, Chen CY, Wang Q, Zhou FC. Publicly Verifiable Outsourced Database with Full Delegation. Ruan Jian Xue Bao/Journal of Software, 2016 (in Chinese). http://www.jos.org.cn/1000-9825/0000.htm'
+            href: 'http://www.jos.org.cn/1000-9825/0000.htm'
+          - item3:
+            reference: '张冠宇,尚文利,张博文,陈春雨,刘周斌,张锐.一种结合遗传算法的工控协议模糊测试方法[J/OL].计算机应用研究:1-6[2020-11-03].https://doi.org/10.19734/j.issn.1001-3695.2020.03.0048.'
+            href: 'https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CAPJ&dbname=CAPJLAST&filename=JSYJ20200925009&v=Dhm5rO5ZeYj9yKdjqJUYmOJE3QCuPqOSAbnYShYcKwaJicxAV3K%25mmd2FCyGovLm%25mmd2BCbGZ'
+      - part2:
+        year: 2019
+        lists:
+          - item1:
+            reference: 'He Shi, Shang WL, <b>Chen CY</b>, et al. Key Process Protection of High Dimensional Process Data in Complex Production, CMC-Comput. Mater. Con., 2019, in print'
+            href: 'https://www.techscience.com/cmc/v60n2/23054'
+          - item2:
+            reference: 'Shang WL, Gong TY, <b>Chen CY</b>, et al. Information Security Risk Assessment Method for Ship Control System Based on Fuzzy Sets and Attack Trees, Secur. Commun. Netw., 2019, 1, 1-11'
+            href: ''
+          - item3:
+            reference: 'Gong TY, Shang WL, Hong J, <b>Chen CY</b>, Yin L. Vulnerability Quantitative Evaluation Method for Industrial Control System based on Fuzzy Attack and Defense Tree and Entropy Weight Method, Application Research of Computers, 2019, 8, 1-6'
+            href: 'https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2020&filename=JSYJ202008035&v=Dhm5rO5ZeYi%25mmd2BtfFqCyadCtT0tPeFBzbIiOrHg3fwLZPavIQ03GN%25mmd2FGJ%25mmd2FkvS6JsG6o'
+          - item4:
+            reference: 'Shang WL, Yang LY, <b>Chen CY</b>, Yin L, Zeng P, Liu ZB. Lightweight Group Authentication Mechanism for Industrial Control System Terminals, Information & Control, 2019, 3, 344-353'
+            href: 'https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2019&filename=XXYK201903016&v=OdhAanpwph6dpMy19YAJtIp5cjLB6I%25mmd2BcDH%25mmd2FFIdxw5R%25mmd2FrZ3xqbFdFIIKzDuwoRB49'
+          - item8:
+            reference: 'Shang WL, Li WX, <b>Chen CY</b>, et al. Fuzzy Control Method for Industrial Control Protocol based on Feature Matrix, Information & Control, ,2020,49(04):436-443+454'
+            href: 'https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2020&filename=XXYK202004009&v=Y%25mmd2FRIQn74my8gSP4BIrIt2ZX7tubcP25u6FylajjCu9Nqw8fLfWjBXK0qQJoB3Szy'
+          - item9:
+            reference: 'Li WX, Shang WL, He XJ, <b>Chen CY</b>, Zeng P, Industrial Control Protocol Fuzzy Test Case Generation Method based on Improved Mutation Tree, Application Research of Computers, 1-6[2020-10-31].https://doi.org/10.19734/j.issn.1001-3695.2019.07.0556.'
+            href: 'https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CAPJ&dbname=CAPJLAST&filename=JSYJ2020031100U&v=Dhm5rO5ZeYjnx9%25mmd2BDNmIgE532G5B%25mmd2FkRY3ZsHyVVcmoPMYTcOlp2dje6us5iR4XhwA'
+      - part3:
+        year: 2018
+        lists:
+          - item1:
+            reference: '<b>Chen CY</b>, Shang WL, Zhao JM, Liu ZB, Wang ZX, Edge Computing Identity Authentication and Privacy Protection Technology, Automation Panorama, 2018, S2, 88-91'
+            href: 'https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2019&filename=ZDBN2018S2036&v=VYmpUrRkKlbCVLM3qZdWGZQzUaRB6b4hhYdrksVkY8ikxXMLa5AOELHJoag4WdQL'
+          - item2:
+            reference: '支持多用户操作的外包数据库可验证方案'
+            href: 'https://kns.cnki.net/kcms/detail/detail.aspx?filename=ZZDZ201803003&dbcode=CJFQ&dbname=CJFD2018&v=dpdbK7vf%mmd2BxDlw7ArJlijUpzE6MTLdkr%mmd2BwMPhGMPqo2cEaLb0c%mmd2B9JBimJPLHBwQpL'
+      - part4:
+        year: 2017
+        lists:
+          - item1:
+            reference: 'Wang Q, Zhou FC, <b>Chen CY</b>, et al. Secure Collaborative Publicly Verifiable Computation, IEEE Access, 2017, 5, 2479-2488'
+            href: ''
+  skills:
+    title: skills
+    lists:
+      - skill1:
+        content: 'Programming Languages & Tools'
+        type: 'icon'
+        icons:
+          - Java
+          - C++
+          - Python
+          - 'fa-html5'
+          - 'JavaScript'
+      - skill2:
+        content: 'workflow'
+        type: 'list'
+        lists:
+          - 'Cross Platform Developing & Debugging'
+          - 'Cryptography'
+          - 'Convert Idea to Practice'
+  awards:
+    title: 'Awards & Certifications'
+    lists:
+      - 'Excellent Award in 2019 New Staff Tutor System Level Assessment, Shenyang Institute of Automation, Chinese Academy of Sciences - Sep. 2019'
+      - 'First Prize Academic Scholarship - Sep. 2015 & Sep. 2016'
+      - 'Yantai Governance Scholarship - Nov. 2016'
+      - 'Second Prize Scholarship, Software School of Northeastern University -  Sep. 2014'
+      - '1<sup>st</sup>Place - 7<sup>th</sup> National College Student Information Security Contest, Second Prize, Jul. 2014'
+      - '1<sup>st</sup>Place - Mathematical Contest In Modeling, Meritorious Winner, Apr. 2014'
+      - '1<sup>st</sup>Place - China Undergraduate Mathematical Contest in Modeling, Second Prize, Oct. 2013'
+      - 'Science and Technology Innovation Activity Award, Jun. 2013'
+
+  interests:
+    title: 'Interests'
+    lists:
+      - 'Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier
+        and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and
+        kayaking.'
+      - 'When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows,
+        I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements
+        in the front-end web development world.'

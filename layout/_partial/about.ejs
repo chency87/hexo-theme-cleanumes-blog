@@ -1,0 +1,52 @@
+<%
+    var item = {};
+    var title = 'About';
+    
+%>
+
+<body id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none"><%- theme.resume.first_name + theme.resume.last_name%></span>
+      <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+          src="<%- theme.sidebar_about_img %>" alt="" /></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+        class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <% for (var i in theme.resume.menu){ %>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#<%- theme.resume.menu[i].id %>"><%- i %></a>
+        </li>
+        <% } %>
+      </ul>
+    </div>
+  </nav>
+  <!-- Page Content-->
+  <div class="container-fluid p-0">
+    <% for (var i in theme.resume.menu){ %>
+    <section class="resume-section" id="<%- theme.resume.menu[i].id %>">
+      <div class="resume-section-content">
+        <%- partial('_resume/'+theme.resume.menu[i].section,{item: theme.resume[theme.resume.menu[i].id]}) %>
+      </div>
+    </section>
+    <hr class="m-0" />
+    <% } %>
+  </div>
+
+
+
+
+  <!-- jQuery -->
+  <script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="/js/resume.js" type="text/javascript" charset="utf-8"></script>
+
+</body>

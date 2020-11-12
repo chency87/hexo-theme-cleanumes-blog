@@ -1,0 +1,28 @@
+<h2 class="mb-5"><%- item.title %> </h2>
+<% item.lists.forEach(element => { %>
+<div class="subheading mb-3"><%- element.content %></div>
+
+<% if (element.type === 'icon') { %>
+<ul class="list-inline dev-icons">
+  <% element.icons.forEach(ele => { %>
+  <li class="list-inline-item">
+    <% if (ele.substr(0, 3) === "fa-") { %>
+    <i class="fa <%- ele %>"></i>
+    <% } else { %>
+    <i class="fa"><%- ele %></i>
+    <% } %>
+
+  </li>
+  <% }) %>
+</ul>
+<% } else { %>
+
+<ul class="fa-ul mb-0">
+  <% element.lists.forEach(ele => { %>
+  <li>
+    <span class="fa-li"><i class="fa fa-check"></i></span>
+    <%- ele %>
+  </li>
+  <% }) %>
+</ul>
+<% }}) %>

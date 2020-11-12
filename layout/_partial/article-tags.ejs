@@ -1,0 +1,11 @@
+
+<%
+    var tags = [];
+    item.tags.forEach(function(tag){
+        
+        
+        tags.push('<i class="fa fa-tag"></i><a href="' + config.root + tag.path + '">' + tag.name + '</a></i>');
+    });
+%>
+
+<%- tags.join(' ') %>

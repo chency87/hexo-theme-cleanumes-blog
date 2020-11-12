@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html <% if(config.language) { %> lang="<%= config.language %>" <% } else { %>lang="en" <% }%>>
+
+<!-- Head tag -->
+<%- partial('_partial/head') %>
+
+<body>
+    <% if(path !== 'about/index.html') {%>
+    <!-- Menu -->
+    <%- partial('_partial/menu', {}, {cache: true}) %>
+
+    <!-- Main Content -->
+    <%- body %>
+
+    <!-- Footer -->
+    <%- partial('_partial/footer') %>
+
+    <!-- After footer scripts -->
+    <%- partial('_partial/after-footer') %>
+    <% } else {%>
+    <%- partial('_partial/about') %> <%}%>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<h1 class="mb-0">
+  <%- item.first_name %>
+  <span class="text-primary"><%- item.last_name %>
+  </span>
+</h1>
+<div class="subheading mb-5">
+  <%- item.address %>, <%- item.zip %> · <%- item.telephone  %> ·
+  <a href="mailto:<%- item.email %> "><%- item.email %></a>
+</div>
+<p class="lead mb-5"><%- item.bio %> </p>
+<div class="social-icons">
+  <% for (var i in item.social){ %>
+  <a class="social-icon" href="<%- item.social[i].href %> " target="_blank">
+    <% if (item.social[i].icon.substr(0, 3) === "fa-") { %>
+    <i class="fa <%- item.social[i].icon %>"></i>
+    <% } else {%>
+    <i class="fa"><%- item.social[i].icon %></i>
+    <% } %>
+  </a>
+  <% } %>
+
+
+  <div id="QRcodeImg" style="margin:25px 15px; width: 155px; height: 155px;border: 2px solid green;">
+    <img src="/img/QRcodeImg.jpg" style="width: 150px; height: 150px;" class="wechat_code">
+  </div>
+</div>
