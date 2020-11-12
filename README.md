@@ -3,7 +3,7 @@ Hexo theme implementation of my own website.
 
 Cleanumes-blog = Clean blog + resumes
 
-
+![image](https://github.com/chency87/hexo-theme-cleanumes-blog/blob/main/index-page.jpg?raw=true)
 
 cleanumes-blog is a full featured, responsive Hexo theme. [Demo here](http://www.dongkeai.cn).
 
